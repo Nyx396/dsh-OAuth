@@ -1,0 +1,9 @@
+# Public bundle: keep the ChatGPT route dormant until explicitly enabled.
+- insert:
+    - id: llm-oauth
+      name: dsh-llm-oauth
+      inject: [llm]
+      config:
+        catalog:
+          - openai
+        providers: {}
